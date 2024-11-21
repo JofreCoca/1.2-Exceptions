@@ -1,6 +1,7 @@
-package Level_1_Exercise_1;
+package Level_1_Exercise_1.Main;
 
-import java.util.ArrayList;
+import Level_1_Exercise_1.Modules.EmptySaleExcepcion;
+import Level_1_Exercise_1.Modules.Sale;
 
 public class Main {
     public static void main(String[] args) throws EmptySaleExcepcion {

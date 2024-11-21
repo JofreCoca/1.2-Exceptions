@@ -1,4 +1,4 @@
-package Level_1_Exercise_1;
+package Level_1_Exercise_1.Modules;
 
 public class Product {
     private String name;
