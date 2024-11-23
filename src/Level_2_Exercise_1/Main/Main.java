@@ -1,8 +1,11 @@
-package Level_2_Exercise_1;
+package Level_2_Exercise_1.Main;
+
+import Level_2_Exercise_1.Modules.Entrance;
+import Level_2_Exercise_1.Modules.MessageReadException;
 
 public class Main {
 
-    public static void main(String[] args) throws MessageReadException{
+    public static void main(String[] args) throws MessageReadException {
         Entrance entrance = new Entrance();
 
         byte resultByte=entrance.readByte("Write your age");

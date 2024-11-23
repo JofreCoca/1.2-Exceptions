@@ -1,6 +1,5 @@
-package Level_2_Exercise_1;
+package Level_2_Exercise_1.Modules;
 import java.util.InputMismatchException;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Entrance {
