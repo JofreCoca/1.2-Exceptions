@@ -4,9 +4,10 @@ import Level_2_Exercise_1.Modules.MessageReadException;
 import java.util.ArrayList;
 
 public class ChairsManage {
-    ArrayList<Armchair> armChairs;
+    private ArrayList<Armchair> armChairs;
+
     public ChairsManage() {
-        this.armChairs=new ArrayList<Armchair>();
+        this.armChairs = new ArrayList<Armchair>();
     }
 
     public ArrayList<Armchair> getArmChairs() {
@@ -19,7 +20,7 @@ public class ChairsManage {
             if(search==-1){
                 this.armChairs.add(armChair);
             }else{
-                throw new SeatOccupiedexception("Exception: Chair Occupied");
+                throw new SeatOccupiedexception();
             }
         } catch (SeatOccupiedexception e) {
             System.out.println(e.getMessage());
@@ -43,7 +44,7 @@ public class ChairsManage {
         int position=-1;
         int i=0;
         while(i<armChairs.size() && position==-1){
-            if(armChairs.get(i).getRowNumber()==rowNumber && armChairs.get(i).numberOfSeats==numberOfSeats){
+            if(armChairs.get(i).getRowNumber()==rowNumber && armChairs.get(i).getNumberOfSeats() ==numberOfSeats){
                 position=i;
             }
             i++;

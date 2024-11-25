@@ -15,6 +15,22 @@ public class Cinema {
         requestInitialData();
     }
 
+    public int getRows() {
+        return rows;
+    }
+
+    public int getSealsEachRow() {
+        return sealsEachRow;
+    }
+
+    public ChairsManage getChairsManage() {
+        return chairsManage;
+    }
+
+    public CinemaManager getCinemaManager() {
+        return cinemaManager;
+    }
+
     public void start(){
         boolean goOut = false;
         do{
@@ -24,19 +40,19 @@ public class Cinema {
                     goOut = true;
                     break;
                 case 1:
-
+                    this.cinemaManager.showArmchairs();
                     break;
                 case 2:
-
+                    this.cinemaManager.showPersonaArmchairs();
                     break;
                 case 3:
-
+                    this.cinemaManager.bookASeat();
                     break;
                 case 4:
-
+                    this.cinemaManager.cancelReservation();
                     break;
                 case 5:
-
+                    this.cinemaManager.cancelReservaPerson();
                     break;
             }
         }while(!goOut);

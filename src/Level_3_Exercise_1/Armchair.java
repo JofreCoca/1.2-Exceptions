@@ -1,9 +1,9 @@
 package Level_3_Exercise_1;
 
 public class Armchair {
-    int rowNumber;
-    int numberOfSeats;
-    String personWhoReservesTheSeat;
+    private int rowNumber;
+    private int numberOfSeats;
+    private String personWhoReservesTheSeat;
     public Armchair(int rowNumber,int numberOfSeats,String personWhoReservesTheSeat) {
         this.rowNumber=rowNumber;
         this.numberOfSeats=numberOfSeats;
