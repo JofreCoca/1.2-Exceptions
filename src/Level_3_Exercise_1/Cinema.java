@@ -11,15 +11,14 @@ public class Cinema {
 
     public Cinema() {
         this.chairsManage=new ChairsManage();
-        this.cinemaManager=new CinemaManager();
+        this.cinemaManager=new CinemaManager(this);
         requestInitialData();
     }
 
     public void start(){
-
         boolean goOut = false;
         do{
-            switch(menu()){
+            switch(this.cinemaManager.menu()){
                 case 0:
                     System.out.println("Thank you for using the program");
                     goOut = true;
@@ -41,27 +40,6 @@ public class Cinema {
                     break;
             }
         }while(!goOut);
-    }
-
-    public static byte menu(){
-        Scanner entradaTeclat = new Scanner(System.in);
-        byte opcio;
-        final byte MINIMO = 0;
-        final byte MAXIMO =5;
-        do{
-            System.out.println("\nMenu");
-            System.out.println("1.- Show all reserved seats.");
-            System.out.println("2.- Show seats reserved by one person.");
-            System.out.println("3.- Reserve a seat.");
-            System.out.println("4.- Cancel the reservation of a seat.");
-            System.out.println("5.- Cancel all reservations for a person.");
-            System.out.println("0.- Go out.");
-            opcio = entradaTeclat.nextByte();
-            if(opcio < MINIMO || opcio > MAXIMO){
-                System.out.println("Choose a valid option");
-            }
-        }while(opcio < MINIMO || opcio > MAXIMO);
-        return opcio;
     }
 
     public void requestInitialData(){

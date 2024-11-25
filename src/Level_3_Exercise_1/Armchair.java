@@ -30,7 +30,6 @@ public class Armchair {
         return result;
     }
 
-    @Override
     public String toString() {
         return "Armchair{" +
                 "rowNumber=" + rowNumber +
