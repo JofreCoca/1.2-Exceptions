@@ -1,6 +1,5 @@
-package Level_3_Exercise_1;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+package Level_3_Exercise_1.Main;
+import Level_3_Exercise_1.Modules.Cinema;
 
 public class Main {
     public static void main(String[] args){

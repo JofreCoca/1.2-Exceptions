@@ -1,4 +1,4 @@
-package Level_3_Exercise_1;
+package Level_3_Exercise_1.Exceptions;
 
 public class InvalidSeatException extends Throwable {
     public InvalidSeatException() {

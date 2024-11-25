@@ -1,7 +1,9 @@
-package Level_3_Exercise_1;
+package Level_3_Exercise_1.Modules;
 
-import Level_1_Exercise_1.Modules.EmptySaleExcepcion;
 import Level_2_Exercise_1.Modules.MessageReadException;
+import Level_3_Exercise_1.Exceptions.ExceptionIncorrectPersonName;
+import Level_3_Exercise_1.Exceptions.InvalidSeatException;
+import Level_3_Exercise_1.Exceptions.SeatOccupiedexception;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

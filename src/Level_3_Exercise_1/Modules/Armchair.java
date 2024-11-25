@@ -1,4 +1,4 @@
-package Level_3_Exercise_1;
+package Level_3_Exercise_1.Modules;
 
 public class Armchair {
     private int rowNumber;

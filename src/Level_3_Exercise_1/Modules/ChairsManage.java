@@ -1,5 +1,6 @@
-package Level_3_Exercise_1;
-import Level_2_Exercise_1.Modules.MessageReadException;
+package Level_3_Exercise_1.Modules;
+import Level_3_Exercise_1.Exceptions.FreeArmchairExeption;
+import Level_3_Exercise_1.Exceptions.SeatOccupiedexception;
 
 import java.util.ArrayList;
 
