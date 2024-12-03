@@ -17,13 +17,16 @@ public class Sale{
         return products;
     }
 
+    public void addProducts(Product products) {
+        this.products.add(products);
+    }
+
     public void calculateTotal() throws EmptySaleExcepcion{
         float total=0f;
-
-        if(products.isEmpty()){
+        if(this.products.isEmpty()){
             throw new EmptySaleExcepcion();
         }else{
-            for (Product readingArrayProducts : products) {
+            for (Product readingArrayProducts : this.products) {
                 total+=readingArrayProducts.getPrice();
             }
         }
