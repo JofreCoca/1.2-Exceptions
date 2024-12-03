@@ -1,8 +1,9 @@
 package Level_1_Exercise_1.Modules;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Sale{
-    private ArrayList<Product> products;
+    private List<Product> products;
     private float totalSalePrice;
 
     public Sale() {
@@ -13,7 +14,7 @@ public class Sale{
         return totalSalePrice;
     }
 
-    public ArrayList<Product> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
